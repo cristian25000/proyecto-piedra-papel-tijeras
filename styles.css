@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 20px;
+}
+
+body > header {
+    background-color: #AD88C6;
+    color: white;
+    padding: 20px;
+    width: 50vw;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 50vw;
+    height: 80vh;
+    margin: 0 auto;
+}
+
+main > .select-player-mode {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(71, 71, 71, 0.395);
+    border-radius: 20px;
+    padding: 30px;
+    height: 80vh;
+}
+
+main > .select-player-mode > div:nth-child(2) {
+    margin: 30px;
+}
+
+main > .select-player-mode input {
+    width: 200px;
+    height: 30px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    background-color: #AD88C6;
+    color: white;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 40px;
+    background-color: #FFF6E9;
+    border-radius: 20px;
+}
+
+.video-game-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-game-container > div {
+    display: flex;
+    align-items: center;
+}
+
+.button-option {
+    width: 80px;
+    height: 30px;
+    border: none;
+    background-color: #AD88C6;
+    color: white;
+    border-radius: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.video-game-container img {
+    width: 200px;
+}
+
+.video-game-container > div > section:nth-child(1), .video-game-container > div > section:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+#player-vs-player, #player-vs-machine {
+    display: none;
+    margin-top: 30px;
+}
+
+/* Estilos para pantallas grandes (por defecto) */
+/* Tus estilos actuales aquí... */
+
+/* Estilos para tablets */
+@media screen and (max-width: 768px) {
+    body > header, main {
+        width: 75vw; /* Aumenta el ancho para dispositivos más pequeños */
+    }
+
+    .button, main > .select-player-mode input {
+        width: 150px; /* Ajusta el tamaño de los botones y campos de entrada */
+    }
+}
+
+/* Estilos para teléfonos móviles */
+@media screen and (max-width: 480px) {
+    body {
+        padding-top: 10px;
+    }
+
+    body > header, main {
+        width: 90vw; /* Aumenta el ancho para pantallas más pequeñas */
+    }
+
+    .button, main > .select-player-mode input {
+        width: 120px; /* Ajusta el tamaño para pantallas más pequeñas */
+    }
+
+    .game-header, .video-game-container > div {
+        flex-direction: column; /* Cambia la dirección de flex para apilar elementos */
+    }
+
+    .video-game-container img {
+        width: 150px; /* Ajusta el tamaño de las imágenes */
+    }
+}

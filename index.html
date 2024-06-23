@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, paper & scissors</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Rock, paper & scissors</h1>
+    </header>
+    <main>
+        <section class="select-player-mode">
+            <div>
+                <span>Enter the attempts</span>
+                <input type="text" id="attempts-input" name="attempts" placeholder="Enter the attempts">
+            </div>
+            <div>
+                <button type="button" class="button" id="player-vs-player-button">Player vs Player</button>
+                <button type="button" class="button" id="player-vs-machine-button">Player vs machine</button>
+            </div>
+        </section>
+        <section class="player-vs-player" id="player-vs-player">
+            <header class="game-header">
+                <h2 id="player-1-score">Player 1: 0</h2>
+                <h2 id="player-2-score">Player 2: 0</h2>
+            </header>
+            <section class="video-game-container">
+                <div>
+                    <section class="options">
+                        <button class="button-option" id="rock-p1">Rock</button>
+                        <button class="button-option" id="paper-p1">Paper</button>
+                        <button class="button-option" id="scissor-p1">Scissor</button>
+                    </section>
+                    <section>
+                        <img src="./assets/rock.png" alt="Rock" id="player1-image"/>
+                    </section>
+                </div>
+                <div>
+                    <section>
+                        <img src="./assets/rock.png" alt="Rock" id="player2-image">
+                    </section>
+                    <section class="options">
+                        <button class="button-option" id="rock-p2">Rock</button>
+                        <button class="button-option" id="paper-p2">Paper</button>
+                        <button class="button-option" id="scissor-p2">Scissor</button>
+                    </section>
+                </div>
+            </section>
+        </section>
+        <section class="player-vs-machine" id="player-vs-machine">
+            <header class="game-header">
+                <h2 id="player-score">Player: 0</h2>
+                <h2 id="machine-score">Machine: 0</h2>
+            </header>
+            <section class="video-game-container">
+                <div>
+                    <section class="options">
+                        <button class="button-option" id="rock">Rock</button>
+                        <button class="button-option" id="paper">Paper</button>
+                        <button class="button-option" id="scissor">Scissor</button>
+                    </section>
+                    <section>
+                        <img src="./assets/rock.png" alt="Rock" id="player-image"/>
+                    </section>
+                </div>
+                <div>
+                    <section>
+                        <img src="./assets/rock.png" alt="Rock/" id="machine-image"/>
+                    </section>
+                </div>
+            </section>
+            <section class="video-game-container"></section>
+        </section>
+    </main>
+</body>
+</html>
